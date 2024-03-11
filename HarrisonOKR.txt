@@ -1,0 +1,6 @@
+Schedule and deliverable:
+Build barebone layout of game map - Fri by 7pm (estimate: 2 Hours)
+Implement basic movement and collision detection - Sat by 7pm (estimate: 4 Hours) 
+***After Spring Break***
+Implement basic physics and gravity - Sun by 7pm (2 Hours)
+Script and implement FPS controls and mechanics - Mon by 7pm (3 Hours)  
