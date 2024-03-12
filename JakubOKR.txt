@@ -1,0 +1,5 @@
+Schedule and deliverable:
+Implement Zombie AI script - Fri by 10pm (estimate: 2 Hours) 
+***After Spring Break***
+Implement weapons scripts and optimize models - Sun by 7pm (3 Hours)
+Implement HUD and overlay display - Mon by 9pm (2 hours)
