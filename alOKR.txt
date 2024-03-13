@@ -1,0 +1,14 @@
+ Schedule and delivaerable:
+  ** Before Spring Break:
+  Implement game mechanics (Sunday 7pm):
+    Single-player functionality - 2 days
+    First-person perspective - 1 day
+    Movement controls (W, A, S, D) - 1 day
+    Aim and shoot mechanics - 2 days
+  ** After Spring Break:
+  Implement enemy behaviors (Tuesday 7pm):
+    Brain-hacked zombie behavior - 4 days
+    Armed mega-soldier behavior - 4 days
+  Test and debug (Saturday 7pm):
+    Test game mechanics and functionalities - 5 days
+    Debug any issues found during testing - 4 days 
