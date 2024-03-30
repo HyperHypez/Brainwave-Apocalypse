@@ -936,6 +936,7 @@ GameObject:
   - component: {fileID: 4467757482891228}
   - component: {fileID: 111670102475343736}
   - component: {fileID: 8966669137329881970}
+  - component: {fileID: 4988727403122547466}
   m_Layer: 0
   m_Name: Ghoul
   m_TagString: BounceObject
@@ -1005,10 +1006,22 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 1.013072
+  m_Height: 3.9935565
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1.4967782, z: 0.41586304}
+--- !u!114 &4988727403122547466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309486516299566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 395b238fc2b4cc248ac82fd0f26ceeb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1312574273513674
 GameObject:
   m_ObjectHideFlags: 0

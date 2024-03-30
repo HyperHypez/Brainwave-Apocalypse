@@ -28,8 +28,14 @@ public class BulletScript : MonoBehaviour {
 					Instantiate(decalHitWall, hit.point + hit.normal * floatInfrontOfWall, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
-				if(hit.transform.tag == "Dummie"){
+				if(hit.transform.tag == "BounceObject"){
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
+					NPCController npc = hit.transform.GetComponent<NPCController>();
+					if (npc != null)
+					{
+						npc.Despawn();
+					}
+
 					Destroy(gameObject);
 				}
 			}		
@@ -38,4 +44,19 @@ public class BulletScript : MonoBehaviour {
 		Destroy(gameObject, 0.1f);
 	}
 
+	  void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("BounceObject")) // Adjust the tag as per your NPC prefab
+        {
+            NPCController npc = collision.gameObject.GetComponent<NPCController>();
+            if (npc != null)
+            {
+                npc.Despawn(); // Trigger despawning of the NPC
+            }
+            Destroy(gameObject); // Destroy the bullet object upon collision
+        }
+    }
+
 }
+
+
