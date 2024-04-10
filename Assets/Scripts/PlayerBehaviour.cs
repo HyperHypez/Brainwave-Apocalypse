@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.O)) {
+            PlayerTakeDamage(20);
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
+        }
+
+        if(Input.GetKeyDown(KeyCode.P)) {
+            PlayerHeal(20);
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
+        }
+         
+        
+    }
+
+    private void PlayerTakeDamage(int dmg) {
+        GameManager.gameManager._playerHealth.DmgUnit(dmg);
+    }
+
+    private void PlayerHeal(int healing) {
+        GameManager.gameManager._playerHealth.HealUnit(healing);
         
     }
 }
