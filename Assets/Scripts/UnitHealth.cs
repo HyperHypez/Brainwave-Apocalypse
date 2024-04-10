@@ -5,6 +5,8 @@ public class UnitHealth
     int _currentHealth;
     int _currentMaxHealth;
 
+    
+
     // Properties
     public int Health {
         get
@@ -29,6 +31,8 @@ public class UnitHealth
             _currentMaxHealth = value;
         }
     }
+
+    
 
     // Constructor
     public UnitHealth(int health, int maxHealth) {

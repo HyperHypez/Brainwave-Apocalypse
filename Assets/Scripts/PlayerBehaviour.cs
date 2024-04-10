@@ -1,12 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerBehaviour : MonoBehaviour
 {
-    void Start()
+
+    public TMP_Text healthText;
+
+    void Start() {
+        UpdateHealthDisplay();
+    }
+
+    void UpdateHealthDisplay()
     {
-        
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + GameManager.gameManager._playerHealth.Health.ToString();
+        }
     }
 
     void Update()
@@ -27,10 +38,12 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void PlayerTakeDamage(int dmg) {
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
+        UpdateHealthDisplay();
     }
 
     private void PlayerHeal(int healing) {
         GameManager.gameManager._playerHealth.HealUnit(healing);
+        UpdateHealthDisplay();
         
     }
 }
