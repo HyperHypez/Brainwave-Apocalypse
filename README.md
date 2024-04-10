@@ -4,6 +4,8 @@ https://docs.google.com/document/d/1zG1gcRiGjr67SdyZKwbdgDmSvfnNr1gnWfaGEjYL5bo/
 
 In our design implementation, we came together to start with the lights and physics. Before the AI and Mecanim implementation, we already had an abundant(>3) amount of lights and physics, and some tweaks were already in. This includes textures to objects of the buildings including rooms, walls, chairs, plants, desks, etc and on the given player weapon, the guns the player has the given textures. Many of the four different zombie types also have their own textures. Throughout the building, more than 40 lights were placed. As for the FPS mechanics, there are sound effects with shooting and reloading. Along with the blood effect when shooting an enemy. These changes add more challenges, detail, and depth to the game. One of the main AI construct implemented into the zombies is the FSM, which uses a simple idle & chase/attack states. The player will need to be more strategic in passing through and fighting the zombies. It has animations for visuals and AI for the added strategic challenges in managing the number of zombies.
 
+Includes various UI elements and sound effects enhancing immersion. Upon opening, a screen menu greets players accompanied by background music setting the tone. During gameplay, players encounter zombie attacks, signified by eerie zombie noises, while gunfire resonates with impactful gunshots. Reloading the gun is accompanied by a player's voice dialogue, adding realism, and sprinting is punctuated by huffing sounds. The UI includes an ammo indicator to track bullet count and a health status indicator for player well-being. Background ambient sounds of dripping water simulate leaky pipes, further enriching the environment. Additional sound effects include player jumping and weapon switching, complemented by background music to sustain the gameplay atmosphere.
+
 Major changes for Assignment 6:
 
 (Jakub Pekala)
@@ -21,4 +23,27 @@ Major changes for Assignment 6:
 - Some zombies have a random idle and patrolling AI path. They will randomly roam at places around the map. It also uses nav mesh.
 - Attack and walking animation that is looped for the given mecanim. 
 
+
+Major changes for Assignment 7:
+(Jakub Pekala)
+-Start the screen menu when the game is opened before starting the gameplay (UI Element)
+-Background music for the start screen.
+-Sound effect of zombie noises when they're in attack mode.
+-Sound effect of gunshots when shooting.
+
+(Harrison Vu)
+-Sound effects for reloading the gun with a player's voice dialogue. 
+-Sound effects for the huff when player is sprinting.
+-UI element for ammo indiacator of how much bullets the player has.
+-Background sound for dripping waters to mimic leaky pipes.
+
+(Al Kaleshi)
+-Sounds effects for player jumping
+-Sounds effects for player switching to another weapon.
+-Background music during the gameplay.
+-Health status to indicate how well the player is (UI Element)
+
 Further Infomation & References in Design Document
+
+
+
