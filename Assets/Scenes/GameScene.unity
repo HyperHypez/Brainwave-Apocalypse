@@ -10140,6 +10140,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 69192384}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1320075957 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82102465769777700, guid: c391f12a928274acab8576bb6030641d, type: 3}
+  m_PrefabInstance: {fileID: 1891612734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1352323631
 GameObject:
   m_ObjectHideFlags: 0
@@ -11293,6 +11298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthText: {fileID: 1089310118}
+  dangerSound: {fileID: 1320075957}
 --- !u!1001 &1781139833
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,9 +7,13 @@ public class PlayerBehaviour : MonoBehaviour
 {
 
     public TMP_Text healthText;
+    public AudioSource dangerSound;
+    
+    
 
     void Start() {
         UpdateHealthDisplay();
+
     }
 
     void UpdateHealthDisplay()
@@ -17,6 +21,16 @@ public class PlayerBehaviour : MonoBehaviour
         if (healthText != null)
         {
             healthText.text = "Health: " + GameManager.gameManager._playerHealth.Health.ToString();
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("BounceObject"))
+        {
+            PlayerTakeDamage(10);
+            dangerSound.Play();
+            Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
     }
 
