@@ -5,23 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class mainMController : MonoBehaviour
 {
-    public CanvasGroup OptionPanel;
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(2);
     }
 
-    public void Option()
+    public void OptionsRules()
     {
-        OptionPanel.alpha = 0;
-        OptionPanel.blocksRaycasts = true;
+        SceneManager.LoadScene(1);
     }
+
 
     public void Back()
     {
-        OptionPanel.alpha = 0;
-        OptionPanel.blocksRaycasts = true;
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()

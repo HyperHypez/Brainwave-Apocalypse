@@ -11,7 +11,12 @@ public class MainMenuController : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(2);
+    }
+
+    public void OptionsRules()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void Option()
@@ -22,6 +27,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Back()
     {
+        SceneManager.LoadScene(0);
         OptionPanel.alpha = 0;
         OptionPanel.blocksRaycasts = false;
     }
