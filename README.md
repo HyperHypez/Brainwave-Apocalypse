@@ -45,6 +45,27 @@ Major changes for Assignment 7:
 -Background music during the gameplay.
 -Health status to indicate how well the player is (UI Element)
 
+
+
+Major changes for Assignment 8:
+(Harrison Vu)
+-Created and designed intro scene in giving the background of the game.
+-Implemented rim lighting shaders, in adding some effects to some zombies.
+-Added planes to the stairs so that player can walk up stairs w/o jumping. (Alpha Feedback)
+-Added in a helicopter checkpoint for player to reach and finish game. 
+
+(Jakub Pekala)
+-Implemented final color (with red tint) shaders to super zombies, giving player easy indication
+-Created and designed outro scene in ending the game and to provide credits.
+-Fixed scripting for UI and scene switching. After win or lose scene gives you an option to try again. (Alpha Feedback)
+-Added an instructions screen to start menu in helping player to figure out controls and goal of game.(Alpha Feedback)
+
+(Al Kaleshi)
+-Updated and fixed the health system, where zombies attacks will drain health properly. (Alpha Feedback)
+-Added a death screen, when health drained at 0. Will tell player game is over and to try again. (Alpha Feedback)
+-Implemented cubemap reflection shaders. To give a few zombies a metallic look  
+
+
 Further Infomation & References in Design Document
 
 

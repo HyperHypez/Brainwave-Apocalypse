@@ -15,6 +15,7 @@ TagManager:
   - BulletSpawn
   - Weapon
   - BounceObject
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

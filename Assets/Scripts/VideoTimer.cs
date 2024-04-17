@@ -6,6 +6,8 @@ public class VideoTimer : MonoBehaviour
     public float timerDuration = 40f; // Timer duration in seconds
     private float elapsedTime = 0f;
 
+    public string switchTo = "GameScene";
+
     void Update()
     {
         elapsedTime += Time.deltaTime; // Increase elapsed time by the time passed since last frame
@@ -13,7 +15,7 @@ public class VideoTimer : MonoBehaviour
         if (elapsedTime >= timerDuration || Input.GetKeyDown(KeyCode.Space))
         {
             // Load the next scene when the timer reaches the specified duration
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene(switchTo);
         }
     }
 }

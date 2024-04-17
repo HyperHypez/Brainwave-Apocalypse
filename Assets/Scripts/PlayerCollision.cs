@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -9,6 +11,13 @@ public class CollisionHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+
+
+        if(collision.gameObject.CompareTag("Checkpoint"))
+        {
+            SceneManager.LoadScene("Outro");
+        }
+
         if (!hasBounced && collision.gameObject.CompareTag("BounceObject")) // Adjust the tag as per your NPC prefab
         {
             // Calculate the direction of the bounce (opposite to the normal of collision)
