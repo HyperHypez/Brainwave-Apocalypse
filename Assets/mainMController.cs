@@ -11,6 +11,11 @@ public class mainMController : MonoBehaviour
         SceneManager.LoadScene(2);
     }
 
+    public void PlayGameNoIntro()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void OptionsRules()
     {
         SceneManager.LoadScene(1);
