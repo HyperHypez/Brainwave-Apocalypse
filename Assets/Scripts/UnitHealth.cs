@@ -1,3 +1,4 @@
+using UnityEngine.SceneManagement;
 
 public class UnitHealth
 {
@@ -42,8 +43,12 @@ public class UnitHealth
 
     // Methods
     public void DmgUnit(int dmgAmount) {
-        if (_currentHealth > 0) {
+        if (_currentHealth > 1) {
             _currentHealth -= dmgAmount;
+        }
+        else
+        {
+            SceneManager.LoadScene(4);
         }
     }
 
