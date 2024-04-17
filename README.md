@@ -27,6 +27,7 @@ Major changes for Assignment 6:
 
 
 Major changes for Assignment 7:
+
 (Jakub Pekala)
 -Start the screen menu when the game is opened before starting the gameplay (UI Element)
 -Background music for the start screen.
@@ -48,6 +49,7 @@ Major changes for Assignment 7:
 
 
 Major changes for Assignment 8:
+
 (Harrison Vu)
 -Created and designed intro scene in giving the background of the game.
 -Implemented rim lighting shaders, in adding some effects to some zombies.
