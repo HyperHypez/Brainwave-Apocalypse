@@ -1,6 +1,6 @@
 # Brainwave-Apocalypse
 
-https://docs.google.com/document/d/1zG1gcRiGjr67SdyZKwbdgDmSvfnNr1gnWfaGEjYL5bo/edit?usp=sharing
+Design Document: https://docs.google.com/document/d/1zG1gcRiGjr67SdyZKwbdgDmSvfnNr1gnWfaGEjYL5bo/edit?usp=sharing
 
 Game Build: https://drive.google.com/drive/folders/1CrZYfBY7T3gdcNeVnYXn-86N6s_fCH1S?usp=sharing
 
