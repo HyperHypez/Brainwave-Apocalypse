@@ -1,6 +1,6 @@
 # Brainwave-Apocalypse
 
-https://docs.google.com/document/d/1zG1gcRiGjr67SdyZKwbdgDmSvfnNr1gnWfaGEjYL5bo/edit?usp=sharing
+Design Document: https://docs.google.com/document/d/1zG1gcRiGjr67SdyZKwbdgDmSvfnNr1gnWfaGEjYL5bo/edit?usp=sharing
 
 Game Build: https://drive.google.com/drive/folders/1CrZYfBY7T3gdcNeVnYXn-86N6s_fCH1S?usp=sharing
 
@@ -27,6 +27,7 @@ Major changes for Assignment 6:
 
 
 Major changes for Assignment 7:
+
 (Jakub Pekala)
 -Start the screen menu when the game is opened before starting the gameplay (UI Element)
 -Background music for the start screen.
@@ -48,6 +49,7 @@ Major changes for Assignment 7:
 
 
 Major changes for Assignment 8:
+
 (Harrison Vu)
 -Created and designed intro scene in giving the background of the game.
 -Implemented rim lighting shaders, in adding some effects to some zombies.
