@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     public TMP_Text healthText;
     public AudioSource dangerSound;
+    private bool isTakingDamage = false;
     
     
 
@@ -28,10 +29,31 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("BounceObject"))
         {
-            PlayerTakeDamage(10);
+            PlayerTakeDamage(5);
             dangerSound.Play();
             Debug.Log(GameManager.gameManager._playerHealth.Health);
         }
+    }
+    void OnCollisionStay(Collision collision)
+    {   
+        if (collision.gameObject.CompareTag("BounceObject") && !isTakingDamage)
+        {
+            StartCoroutine(ApplyDamageWithDelay(3)); // Start the coroutine to apply damage with a delay
+        }
+    }
+
+    // Coroutine to apply damage with a delay
+    IEnumerator ApplyDamageWithDelay(float delay)
+    {
+        isTakingDamage = true; // Set the flag to indicate that damage is being applied
+        PlayerTakeDamage(5); // Apply the damage
+        dangerSound.Play(); // Play the danger sound
+        Debug.Log(GameManager.gameManager._playerHealth.Health); // Log player health
+        
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delay);
+
+        isTakingDamage = false; // Reset the flag after the delay
     }
 
     void Update()

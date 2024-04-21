@@ -17,14 +17,15 @@ public class GunScript : MonoBehaviour {
 	[Tooltip("Speed is determined via gun because not every gun has same properties or weights so you MUST set up your speeds here")]
 	public int runningSpeed = 5;
 
+	public GunBulletsData gunBulletsData;
 
 	[Header("Bullet properties")]
 	[Tooltip("Preset value to tell with how many bullets will our waepon spawn aside.")]
-	public float bulletsIHave = 20;
+	public float bulletsIHave;
 	[Tooltip("Preset value to tell with how much bullets will our waepon spawn inside rifle.")]
-	public float bulletsInTheGun = 5;
+	public float bulletsInTheGun;
 	[Tooltip("Preset value to tell how much bullets can one magazine carry.")]
-	public float amountOfBulletsPerLoad = 5;
+	public float amountOfBulletsPerLoad;
 
 	private Transform player;
 	private Camera cameraComponent;
@@ -36,7 +37,7 @@ public class GunScript : MonoBehaviour {
 	 * Collection the variables upon awake that we need.
 	 */
 	void Awake(){
-
+		
 
 		mls = GameObject.FindGameObjectWithTag("Player").GetComponent<MouseLookScript>();
 		player = mls.transform;
@@ -47,6 +48,10 @@ public class GunScript : MonoBehaviour {
 
 		bulletSpawnPlace = GameObject.FindGameObjectWithTag("BulletSpawn");
 		hitMarker = transform.Find ("hitMarkerSound").GetComponent<AudioSource> ();
+        bulletsIHave = gunBulletsData.bulletsIHave;
+        bulletsInTheGun = gunBulletsData.bulletsInTheGun;
+        amountOfBulletsPerLoad = gunBulletsData.amountOfBulletsPerLoad;
+
 
 		startLook = mouseSensitvity_notAiming;
 		startAim = mouseSensitvity_aiming;
@@ -87,6 +92,7 @@ public class GunScript : MonoBehaviour {
 		GiveCameraScriptMySensitvity();
 
 		PositionGun();
+		gunBulletsData.bulletsInTheGun = bulletsInTheGun;
 
 		Shooting();
 		MeeleAttack();
@@ -498,6 +504,10 @@ public class GunScript : MonoBehaviour {
 						bulletsInTheGun += valueForBoth;
 					}
 				}
+
+			    gunBulletsData.bulletsIHave = bulletsIHave;
+        		gunBulletsData.bulletsInTheGun = bulletsInTheGun;
+
 			} else {
 				reloadSound_source.Stop ();
 

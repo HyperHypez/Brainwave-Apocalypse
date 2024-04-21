@@ -7,7 +7,6 @@ public class UnitHealth
     int _currentMaxHealth;
 
     
-
     // Properties
     public int Health {
         get
@@ -30,6 +29,14 @@ public class UnitHealth
         set
         {
             _currentMaxHealth = value;
+        }
+    }
+
+    void Update()
+    {
+        if (_currentHealth <= 0)
+        {
+            SceneManager.LoadScene(4);
         }
     }
 
