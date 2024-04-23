@@ -30,12 +30,16 @@ public class PauseManager : MonoBehaviour
     void PauseGame()
     {
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         pauseCanvas.SetActive(true);
     }
 
     public void ResumeGame()
     {
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseCanvas.SetActive(false);
     }
 }

@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerDuration: 39
-  switchTo: GameScene
+  switchTo: Objective
 --- !u!4 &1962914925
 Transform:
   m_ObjectHideFlags: 0
