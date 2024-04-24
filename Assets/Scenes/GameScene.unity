@@ -14785,6 +14785,10 @@ PrefabInstance:
       propertyPath: been_to_meele_anim
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11478776, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: mouseSensitvity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 13695512, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: m_Material
       value: 
