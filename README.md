@@ -8,7 +8,7 @@ In our design implementation, we came together to start with the lights and phys
 
 Includes various UI elements and sound effects enhancing immersion. Upon opening, a screen menu greets players accompanied by background music setting the tone. During gameplay, players encounter zombie attacks, signified by eerie zombie noises, while gunfire resonates with impactful gunshots. Reloading the gun is accompanied by a player's voice dialogue, adding realism, and sprinting is punctuated by huffing sounds. The UI includes an ammo indicator to track bullet count and a health status indicator for player's survival. Background ambient sounds of dripping water simulate leaky pipes, further enriching the environment. Additional sound effects include player jumping and weapon switching, complemented by background music to sustain the gameplay atmosphere.
 
-Major changes for Assignment 6:
+Major changes for Milestone 6:
 
 (Jakub Pekala)
 - Leaky pipes were added in the office building to add more detail and aesthetics to the building.
@@ -26,7 +26,7 @@ Major changes for Assignment 6:
 - Attack and walking animation that is looped for the given mecanim. 
 
 
-Major changes for Assignment 7:
+Major changes for Milestone 7:
 
 (Jakub Pekala)
 -Start the screen menu when the game is opened before starting the gameplay (UI Element)
@@ -48,18 +48,18 @@ Major changes for Assignment 7:
 
 
 
-Major changes for Assignment 8:
+Major changes for Milestone 8:
 
 (Harrison Vu)
--Created and designed intro scene in giving the background of the game.
+-Created and designed an intro scene to give the game's background.
 -Implemented rim lighting shaders, in adding some effects to some zombies.
 -Added planes to the stairs so that player can walk up stairs w/o jumping. (Alpha Feedback)
--Added in a helicopter checkpoint for player to reach and finish game. 
+-Added a helicopter checkpoint for the players to reach and finish the game. 
 
 (Jakub Pekala)
--Implemented final color (with red tint) shaders to super zombies, giving player easy indication
--Created and designed outro scene in ending the game and to provide credits.
--Fixed scripting for UI and scene switching. After win or lose scene gives you an option to try again. (Alpha Feedback)
+-Implemented final color (with red tint) shaders to super zombies, giving player an easy indication
+-Created and designed an outro scene in ending the game and to provide credits.
+-Fixed scripting for UI and scene switching. After the win or lose scene gives you the option to try again. (Alpha Feedback)
 -Added an instructions screen to start menu in helping player to figure out controls and goal of game.(Alpha Feedback)
 
 (Al Kaleshi)
